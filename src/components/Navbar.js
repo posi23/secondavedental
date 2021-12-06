@@ -27,27 +27,33 @@ const Navbar = () => {
                               </button>
 
                               <div className="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                                    <ul className="navbar-nav">
+                                    <ul className="navbar-nav text-primary">
                                           <li className="nav-item me-3">
-                                                <Link to="/" className="nav-link">
+                                                <Link to="/" className="nav-link fs-5" active>
                                                       Home
                                                 </Link>
                                           </li>
 
                                           <li className="nav-item me-3">
-                                                <Link to="/services" className="nav-link">
+                                                <Link to="/services" className="nav-link fs-5">
                                                       Services
                                                 </Link>
                                           </li>
 
                                           <li className="nav-item me-3">
-                                                <Link to="/contact" className="nav-link">
+                                                <Link to="/contact" className="nav-link fs-5">
                                                       Contact
                                                 </Link>
                                           </li>
 
+                                          <li className="nav-item me-3">
+                                                <Link to="/faq" className="nav-link fs-5">
+                                                      FAQ
+                                                </Link>
+                                          </li>
+
                                           <li className="nav-item me-3 d-lg-none">
-                                                <Link to="/appoinment" className="nav-link">
+                                                <Link to="/appointment" className="nav-link fs-5">
                                                       Book an Appointment
                                                 </Link>
                                           </li>
@@ -55,7 +61,7 @@ const Navbar = () => {
 
 
                                           <li className="nav-item me-3 px-3 d-none d-lg-inline">
-                                                <Link to="/appointment" className="btn btn-light rounded-pill shadow text-primary">
+                                                <Link to="/appointment" className="btn btn-light rounded-pill shadow text-primary fs-5">
                                                       Book an Appointment
                                                 </Link>
                                           </li>

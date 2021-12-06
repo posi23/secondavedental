@@ -25,10 +25,10 @@ const Submit = ({ feedbackMsg, width }) => {
 
       return (
             <div>
-                  <button className="btn btn-light text-primary rounded-pill shadow" type="button" onClick={handleClick}>Submit</button>
+                  <button className="btn btn-light text-primary rounded-pill shadow" type="submit" onClick={handleClick}>Submit</button>
 
                   <div id="alertPlaceholder" className="mt-3">
-                        {placeholder && <Alert message={feedbackMsg} makeFalse={makeAlertFalse} width={width}/>}
+                        {placeholder && <Alert message={feedbackMsg} makeFalse={makeAlertFalse} width={width} />}
                   </div>
             </div>
       );

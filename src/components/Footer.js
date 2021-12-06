@@ -5,7 +5,7 @@ import Details from "./Details";
 import Hospital from "./Hospital";
 import Image from "./Image"
 import SocialMedia from "./SocialMedia";
-//import { useState } from "react";
+import { useState } from "react";
 import Submit from "./Submit";
 
 
@@ -14,6 +14,10 @@ const Footer = () => {
       var style = {
             backgroundColor: "#D4AAD8"
       }
+
+      const [name, setName] = useState("");
+      const [email, setEmail] = useState("");
+      const [msg, setMsg] = useState("");
 
       return (
             <div className="mt-5" style={style}>
@@ -54,13 +58,13 @@ const Footer = () => {
                                     <p className="lead">ENQUIRE MORE</p>
                                     <form>
                                           <p>
-                                                <input type="text" placeholder="Full Name" />
+                                                <input type="text" placeholder="Full Name" required value={name} onChange={(e) => setName(e.target.value)} />
                                           </p>
                                           <p>
-                                                <input type="text" placeholder="Email Address" />
+                                                <input type="email" placeholder="Email Address" required value={email} onChange={(e) => setEmail(e.target.value)} />
                                           </p>
                                           <p>
-                                                <textarea placeholder="Enter your message"></textarea>
+                                                <textarea placeholder="Enter your message" required value={msg} onChange={(e) => setMsg(e.target.value)}></textarea>
                                           </p>
 
                                           <Submit feedbackMsg="Enquiry submitted" />

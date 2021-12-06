@@ -40,20 +40,33 @@ const Services = () => {
                                     <li>Lorem, ipsum dolor.</li>
 
                               </ul>
+
+
+
+                              <div className="text-dark d-lg-none">
+                                    <br className="" />
+                                    <hr />
+                              </div>
+
+
                         </div>
 
-                        <div className="d-flex flex-column justify-content-between">
+                        <div className="d-flex flex-column justify-content-between mt-5 mt-md-0">
 
                               <div className="align-self-end">
                                     <p className="lead text-light fs-4 text-center fw-bold">We will take good care of your teeth... <br />
                                           so come visit us as soon you can</p>
                               </div>
 
-                              <div className="align-self-end w-50">
+                              <div className="align-self-center align-self-md-end w-100 d-md-none">
                                     <img src={picture3} alt="" className="w-100" />
                               </div>
 
-                              <div className="align-self-end">
+                              <div className="align-self-center align-self-md-end w-50 d-none d-md-inline">
+                                    <img src={picture3} alt="" className="w-100" />
+                              </div>
+
+                              <div className="align-self-end mt-5">
                                     <Link to="/appointment" className="text-decoration-none fs-4">
                                           <button className="btn btn-dark rounded-pill shadow text-light fw-bold p-2">
                                                 <FaCalendarAlt color="grey" /> BOOK AN APPOINTMENT WITH US NOW

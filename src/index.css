@@ -14,11 +14,21 @@ body {
   color: white;
   overflow-x: hidden;
   overflow-y: auto;
+
+  /* background:rgb(237, 225, 225); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#main-nav .navbar-nav .nav-item .nav-link:hover {
+  color: blue;
+}
+
+#main-nav .navbar-nav:active {
+  color: white;
 }
 
 /* .carousel-item {
