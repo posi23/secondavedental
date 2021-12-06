@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../images/Group 45.png";
-import map from "../images/map.png"
 import Details from "./Details";
 import Hospital from "./Hospital";
-import Image from "./Image"
 import SocialMedia from "./SocialMedia";
 import { useState } from "react";
 import Submit from "./Submit";
