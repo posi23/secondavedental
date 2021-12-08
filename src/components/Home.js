@@ -25,18 +25,35 @@ const Home = () => {
 
                               <div className="carousel-inner">
                                     <div className="carousel-item active text-center" style={{ height: "500px" }}>
-                                          <img src={img1} alt="" className="" width="70%" />
 
-                                          <div className="carousel-caption d-none d-md-block">
+                                          <img src={img1} alt="" className="d-block d-lg-none" width="100%" style={{ height: "500px" }} />
+
+                                          <img src={img1} alt="" className="d-none d-lg-block mx-auto" width="70%" style={{}} />
+
+                                          <div className="carousel-caption d-block d-lg-none">
+                                                <h2 className="text-dark fw-bold">Welcome to Second Avenue Dental</h2>
+                                                <p className="fs-5">Dive into the world of the best oral-care clinic</p>
+                                          </div>
+
+                                          <div className="carousel-caption d-none d-lg-block w-50 mx-auto">
                                                 <h2 className="text-dark fw-bold">Welcome to Second Avenue Dental</h2>
                                                 <p className="fs-5">Dive into the world of the best oral-care clinic</p>
                                           </div>
                                     </div>
 
                                     <div className="carousel-item text-center" style={{ height: "500px" }}>
-                                          <img src={img2} alt="" className="" width="50%" />
 
-                                          <div className="carousel-caption d-none d-md-block">
+                                          <img src={img2} alt="" className="d-block d-lg-none" width="100%" style={{ height: "500px" }} />
+
+                                          <img src={img2} alt="" className="d-none d-lg-block mx-auto" width="50%" style={{}} />
+
+                                          <div className="carousel-caption d-block d-lg-none">
+
+                                                <p className="visually-hidden fs-5">With our team of dentists being no. 1</p>
+                                                <p className="fs-5 fw-bold">We offer variety of dental services and deliver with top notch quality</p>
+                                          </div>
+
+                                          <div className="carousel-caption text-light d-none d-lg-block w-50 mx-auto">
 
                                                 <p className="visually-hidden fs-5">With our team of dentists being no. 1</p>
                                                 <p className="fs-5 fw-bold">We offer variety of dental services and deliver with top notch quality</p>
@@ -44,9 +61,22 @@ const Home = () => {
                                     </div>
 
                                     <div className="carousel-item text-center" style={{ height: "500px" }}>
-                                          <img src={img3} alt="" className="" width="50%" />
 
-                                          <div className="carousel-caption d-none d-md-block text-end">
+                                          <img src={img3} alt="" className="d-block d-lg-none" width="100%" style={{ height: "500px" }} />
+
+                                          <img src={img3} alt="" className="d-none d-lg-block mx-auto" width="50%" style={{}} />
+
+                                          <div className="carousel-caption d-block d-lg-none text-center">
+                                                <span className="text-white-50 fs-5 fw-bold mb-0">Come on down to Second Avenue Dental</span>
+                                                <br />
+                                                <Link to="/appointment" className="text-decoration-none fs-6 mt-0">
+                                                      <button className="btn btn-light rounded-pill shadow text-primary fw-bold p-2">
+                                                            <FaCalendarAlt color="grey" /> BOOK AN APPOINTMENT WITH US NOW
+                                                      </button>
+                                                </Link>
+                                          </div>
+
+                                          <div className="carousel-caption d-none d-lg-block w-50 mx-auto text-end">
                                                 <span className="text-white-50 fs-5 fw-bold mb-0">Come on down to Second Avenue Dental</span>
                                                 <br />
                                                 <Link to="/appointment" className="text-decoration-none fs-6 mt-0">
