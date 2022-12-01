@@ -1,4 +1,7 @@
-Second Avenue Dental
+**Second Avenue Dental**
+
+A dummy dental website used as a school project!
+
 
 Developed with ReactJS, Bootstrap and CSS. (Front-end development only)
 
