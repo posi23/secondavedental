@@ -1,4 +1,4 @@
-**Second Avenue Dental**
+**SECOND AVENUE DENTAL**
 
 A dummy dental website used as a school project!
 
